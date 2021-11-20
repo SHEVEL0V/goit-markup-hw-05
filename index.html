@@ -22,7 +22,7 @@
         <!-- навигация -->
         <nav>
         <ul class="nav-item ">
-            <li> <a class="nav-link nav-color" href="./index.html">Студия</a> </li>
+            <li> <a class="nav-link nav-color nav-color-underline" href="./index.html">Студия</a> </li>
             <li> <a class="nav-link nav-color" href="./portfolio.html">Портфолио</a> </li>
             <li> <a class="nav-link nav-color" href="">Контакты</a> </li>
         </ul>
@@ -30,36 +30,38 @@
         <ul class="nav-item-contact">
            <li>
                 <a class="contact-link link-color" href="info@devstudio.com" target="_blank"> 
-                        <svg class="nav-icon" width="16 " height="16" >
-                            <use href="./images/sprite.svg#icon-mail"></use>
-                        </svg>info@devstudio.com</a>
+                    <svg class="nav-icon" width="16 " height="16" >
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                    </svg>info@devstudio.com
+                </a>
             </li>
            <li>
                <a class="contact-link link-color" href="tel:+380961111111">
                     <svg class="nav-icon" width="10 " height="16" >
                         <use href="./images/sprite.svg#icon-tel"></use>
-                    </svg>+38 096 111 11 11</a>
+                    </svg>+38 096 111 11 11
+                </a>
             </li>
         </ul>
     </div>
 </header>
     <main>
         <!-- фон +  модалка -->
-        <section class="backdrop">
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button type="button" class="modal-button">
+                <button  type="button" class="modal-button" data-modal-close>
                     <svg width="11" height="11">
                         <use href="./images/sprite.svg#icon-close"></use>
                     </svg>
                 </button>
             </div>
-        </section>
+        </div>
         <!-- заказ услуг -->
         <section class="hero-fon" >
         <div class="container">
-            <div class="button-container">
+            <div class="hero-container">
                 <h1 class="hero-title" >ЭФФЕКТИВНЫЕ РЕШЕНИЕ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button  type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </div>
         </section>
@@ -385,5 +387,6 @@
             </div>
         </div>
     </footer>
+    <script src="./modal.js"></script>
 </body>
 </html>   
